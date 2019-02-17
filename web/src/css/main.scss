@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic');
+@import "./header.scss";
+@import "./content.scss";
+@import "./variables.scss";
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100%;
+  perspective: 1px;
+  overflow-y: scroll;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.container {
+    width: 956px;
+    margin-left: auto;
+    margin-right: auto;
+}
