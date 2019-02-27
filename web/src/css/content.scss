@@ -1,15 +1,26 @@
 .content {
     padding-top: 83px;
+
     // transform-style: preserve-3d;
     #apartaments {
         width: 100%;
-        height: 768px;
+        height: 749px;
         background: url(../img/apartaments.jpg) no-repeat;
+
+        .container {
+            height: 100%;
+
+            .headline {
+                text-align: center;
+                font-size: 40px;
+                vertical-align: middle;
+            }
+        }
     }
 
     #cottage {
         width: 100%;
-        height: 768px;
+        height: 749px;
         background: url(../img/cottage.jpg) no-repeat;
     }
 

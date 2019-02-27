@@ -21,14 +21,15 @@ header {
             font-size: 30px;
         }
 
-        ul {
+        .menu ul {
             list-style: none;
             font-size: 23px;
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
+            padding-left: 0;
 
-            > li {
+            >li {
                 a {
                     text-decoration: none;
                     color: black
