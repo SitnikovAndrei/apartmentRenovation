@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/js/index.js',
@@ -31,11 +31,21 @@ module.exports = {
             use: [
             {
                 loader: 'file-loader',
-                options: {},
-            } ],
+                options:
+                {},
+            }],
+        },
+        {
+            test: /\.(png|woff|woff2|eot|ttf|svg|otf)$/,
+            loader: 'url-loader?limit=100000'
         }]
     },
     plugins: [
+        // new webpack.ProvidePlugin(
+        // {
+        //     $: 'jquery',
+        //     jQuery: 'jquery'
+        // }),
         new HtmlWebpackPlugin(
         {
             template: './src/index.html'
